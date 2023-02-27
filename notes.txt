@@ -1,0 +1,26 @@
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Proxies
+
+dotnet tool update --global dotnet-ef
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+dotnet ef migrations add AddPasswordUsuario
+dotnet ef database update
+
+dotnet add package Microsoft.IdentityModel.Tokens
+dotnet add package System.IdentityModel.Tokens.Jwt
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+
+dotnet publish -c Release
+
+//"DefaultConnection": "Data Source=MiPrimerAPICRUD.db;"
+    
+    "DefaultConnection": "server=DESKTOP-A0FI08T; database=DBFactElecNesSoftTesis1; Integrated Security=True; MultipleActiveResultSets=True; TrustServerCertificate=False;"
+
+        "DefaultConnection": "Data Source=SQL8005.site4now.net;Initial Catalog=db_a947f7_mvc;User Id=db_a947f7_mvc_admin;Password=bmxextremo17;"

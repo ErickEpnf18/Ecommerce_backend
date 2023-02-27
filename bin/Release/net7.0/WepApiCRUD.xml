@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WepApiCRUD</name>
+    </assembly>
+    <members>
+        <member name="M:WepApiCRUD.Controllers.ProductosController.Get">
+            <summary>
+            Initializes a new instance of the <see cref="T:WepApiCRUD.Controllers.ProductosController"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WepApiCRUD.Controllers.ProductosController.Get(System.Int32)">
+            <summary>
+            Obtener un producto mediante el id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WepApiCRUD.Controllers.ProductosController.Post(WepApiCRUD.Dtos.ProductoCreateDto)">
+            <summary> Ingresar un nuevo producto </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WepApiCRUD.Controllers.ProductosController.Put(System.Int32,WepApiCRUD.Dtos.ProductoUpdateDto)">
+            <summary>
+            Actualizar un producto mediante el ingresado
+            </summary>
+            <param name="id"></param>
+            <param name="productoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WepApiCRUD.Controllers.ProductosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un producto mediante el id
+            </summary>
+            <remarks>
+            remark goes here.
+            </remarks>
+            <param name="id">Este es el id</param>
+            <returns></returns>
+            <response code="200">Producto borrado exitosamentes</response>
+            <response code="400">No existe producto en la base de datos</response>
+        </member>
+        <member name="M:WepApiCRUD.Data.AuthRepository.ExisteUsuario(System.String)">
+            Si existe el usuario
+        </member>
+        <member name="T:WepApiCRUD.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:WepApiCRUD.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WepApiCRUD.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WepApiCRUD.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WepApiCRUD.Migrations.AddPasswordUsuario">
+            <inheritdoc />
+        </member>
+        <member name="M:WepApiCRUD.Migrations.AddPasswordUsuario.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WepApiCRUD.Migrations.AddPasswordUsuario.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WepApiCRUD.Migrations.AddPasswordUsuario.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
